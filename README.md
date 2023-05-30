@@ -28,7 +28,6 @@ Design : [https://www.figma.com/community/file/1184161844969559776/Apple-Watch-S
 # License
 This project is licensed under the MIT License. Feel free to modify and use it according to your needs.
 
-Remember to include any additional instructions or information specific to your project.
 
 
 
