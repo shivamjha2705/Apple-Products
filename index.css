@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+/* Global styling */
+:root {
+  --bg-color1: rgba(119, 129, 144, 1);
+  --bg-color2: rgba(182, 204, 218, 1);
+  --bg-color3: rgba(88, 215, 196, 1);
+  --bg-color4: rgba(255, 170, 155, 1);
+  --txt-color: #ffff;
+  --radio-border: rgb(181, 181, 181);
+  --hamMenu-bg: rgb(45 45 45 / 62%);
+}
+h1 {
+  font-size: 3.5rem;
+  position: relative;
+  top: 8rem;
+}
+h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  position: relative;
+  top: 8rem;
+}
+.bg-col1 {
+  background-color: var(--bg-color1) !important;
+  transition: background-color 1s ease;
+}
+.bg-col2 {
+  background-color: var(--bg-color2) !important;
+  transition: background-color 1s ease;
+}
+.bg-col3 {
+  background-color: var(--bg-color3) !important;
+  transition: background-color 1s ease;
+}
+.bg-col4 {
+  background-color: var(--bg-color4) !important;
+  transition: background-color 1s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+  color: var(--txt-color);
+}
+/* end of Global styling */
+
+header {
+  display: flex;
+}
+.sidebar {
+  height: 100vh;
+  width: 6rem;
+}
+#main-component {
+  background: var(--bg-color1);
+  width: 100vw;
+  height: 100vh;
+}
+/* ==== navbar ====  */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+.logo img {
+  width: 3rem;
+}
+#nav-links {
+  width: 100%;
+}
+#nav-links .current {
+  background: var(--txt-color);
+  color: var(--radio-border);
+  padding: 3px 10px;
+  border-radius: 18px;
+}
+#nav-links ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav-links ul li {
+  list-style: none;
+}
+#nav-links #close,
+.hamburger-menu {
+  display: none;
+}
+/* ==== First Section ====  */
+.container1 {
+  height: 56vh;
+  padding: 0 3rem;
+  display: flex;
+  width: 129vw;
+  background-image: url(./Assets/first.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}
+.product-img img {
+  width: 489px;
+  height: 489px;
+}
+.color-option {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: absolute;
+  top: 19rem;
+  left: 2rem;
+}
+.color-option i {
+  border: 3px solid var(--radio-border);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.color-option #c1 {
+  color: var(--bg-color1);
+}
+.color-option #c2 {
+  color: var(--bg-color2);
+}
+.color-option #c3 {
+  color: var(--bg-color3);
+}
+.color-option #c4 {
+  color: var(--bg-color4);
+}
+#first .second {
+  background-image: url(./Assets/second.png);
+}
+#first .third {
+  background-image: url(./Assets/third.png);
+}
+#first .fourth {
+  background-image: url(./Assets/fourth.png);
+}
+.container2 {
+  padding: 15px 3rem;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.container2 button {
+  background: transparent;
+  padding: 1rem 1.8rem;
+  border-radius: 5rem;
+  border: 1px solid var(--txt-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  transition: 0.8s;
+}
+.container2 button i {
+  transition: 0.8s;
+}
+.container2 button:hover {
+  background: var(--txt-color);
+  color: black;
+  & > i {
+    color: black;
+  }
+}
+.card-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  padding: 15px 2rem;
+  align-items: baseline;
+  position: relative;
+  bottom: 6rem;
+}
+.card-container .cards {
+  width: 7rem;
+}
+.card-container .cards img {
+  width: 6rem;
+  position: relative;
+  top: 5rem;
+  transition: 0.3s;
+}
+.card-container .cards img:hover {
+  cursor: pointer;
+  top: 4rem;
+}
+.card-container .cards .card {
+  height: 5rem;
+  border-radius: 1rem;
+}
+.card1 {
+  background: var(--bg-color2);
+}
+.card2 {
+  background: var(--bg-color3);
+}
+.card3 {
+  background: var(--bg-color4);
+}
+/*================ media query (medium devices)============*/
+@media screen and (max-width: 900px) {
+  .sidebar {
+    display: none;
+    background: black;
+  }
+  #main-component {
+    border-radius: 0px;
+  }
+  #first .container1 .color-option {
+    display: none !important;
+  }
+  #first .container1,
+  .container2 {
+    margin-top: 0 !important;
+  }
+}
+/*================ media query (tablets)============*/
+@media screen and (max-width: 768px) {
+  #nav-links #links {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    right: -300px;
+    width: 300px;
+    top: 0;
+    padding: 5rem 3rem;
+    background: var(--hamMenu-bg);
+    backdrop-filter: blur(7px);
+    border-radius: 16px 0 0 16px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  #nav-links #links li {
+    color: var(--txt-color);
+    font-size: x-large;
+    font-weight: 500;
+  }
+  #nav-links #links .current {
+    color: var(--hamMenu-bg);
+    padding: 8px 30px;
+    border-radius: 50px;
+  }
+  #close {
+    display: block !important;
+    position: absolute;
+    top: 22px;
+    left: 13px;
+    font-size: 35px;
+  }
+  #close:hover {
+    color: rgb(255 186 0);
+  }
+  #main-component nav {
+    padding: 1rem 3rem;
+  }
+  #nav-links .active-link {
+    right: 0 !important;
+  }
+  .hamburger-menu {
+    display: flex !important;
+    justify-content: flex-end;
+  }
+  #first .container1 {
+    background-position-x: center;
+    background-position-y: 0rem;
+    background-size: 18rem;
+    height: 58vh;
+    width: auto;
+    padding: 0;
+  }
+  .text-content {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+    padding: 0;
+  }
+  .card-container {
+    position: relative;
+    bottom: 4rem;
+    gap: 2rem;
+  }
+  .container2 .btn button {
+    padding: 0.5rem 1.8rem;
+  }
+  h1 {
+    font-size: 7.5vw;
+  }
+  h4 {
+    font-size: 3.5vw;
+  }
+}
+/*================ media query (small devices)============*/
+@media screen and (max-width: 425px) {
+  nav {
+    padding: 1rem;
+  }
+  nav .logo {
+    width: -webkit-fill-available;
+  }
+  #first .container1 {
+    background-size: 15rem;
+  }
+  .card-container {
+    gap: 10px !important;
+    width: -webkit-fill-available;
+  }
+  #first .card,
+  .cards > img {
+    width: 23vw !important;
+  }
+  h1 {
+    font-size: 8.5vw;
+  }
+  h4 {
+    font-size: 6.5vw;
+  }
+}
