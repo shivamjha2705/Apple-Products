@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/Assets/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Products</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ==== Font Awesome CDN ==== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- ==== Sidebar ==== -->
+      <aside class="sidebar">
+        <div class="social-icons"></div>
+      </aside>
+      <main id="main-component">
+        <nav>
+          <div class="logo">
+            <img src="./Assets/Logo.png" alt="Logo" />
+          </div>
+          <div id="nav-links">
+            <ul id="links">
+              <li>Mac</li>
+              <li>iPhone</li>
+              <li>iPad</li>
+              <li class="current">iWatch</li>
+              <li>Support</li>
+              <a href="#"
+                ><i id="close" class="fa-sharp fa-solid fa-circle-xmark"></i
+              ></a>
+            </ul>
+            <div class="hamburger-menu">
+              <i id="bar" class="fa fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+        <section id="first">
+          <div class="container1">
+            <div class="text-content">
+              <h1>The Perfect Moment</h1>
+              <h4>Between Past And Future.</h4>
+            </div>
+            <div class="color-option">
+              <i id="c1" class="fa-solid fa-circle"></i>
+              <i id="c2" class="fa-solid fa-circle"></i>
+              <i id="c3" class="fa-solid fa-circle"></i>
+              <i id="c4" class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+          <div class="container2">
+            <div class="btn">
+              <button>Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="card-container">
+              <div class="cards">
+                <img id="card-img1" src="Assets/second.png" alt="Second Watch" />
+                <div class="card card1"></div>
+              </div>
+              <div class="cards">
+                <img id="card-img2" src="Assets/third.png" alt="Third Watch" />
+                <div class="card card2"></div>
+              </div>
+              <div class="cards">
+                <img id="card-img3" src="Assets/fourth.png" alt="Fourth Watch" />
+                <div class="card card3"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </header>
+
+    <script src="main.js"></script>
+  </body>
+</html>
