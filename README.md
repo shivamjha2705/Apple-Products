@@ -19,7 +19,7 @@ To use this responsive webpage project, follow these steps:
 
 Clone the project repository.
 Open the project directory on your local machine.
-Open index.html file to see the final output
+Open the index.html file to see the final output
 Test the webpage on various devices and screen sizes to ensure optimal display.
 
 # Credits
