@@ -1,4 +1,9 @@
 # Apple-Products
+
+
+https://github.com/shivamjha2705/Apple-Products/assets/69563640/8715a466-d2bb-409d-8abd-3e6c2d51d88f
+
+
 # Project-Description
 The Apple-Products responsive webpage project aims to create a website that adapts to different screen sizes and devices. It ensures optimal viewing experience by adjusting the layout, images, and content based on the user's device.
 
